@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.antifun.EclipseJarDirectoryFeature_1.0.0.201109161533.jar" id="org.antifun.EclipseJarDirectoryFeature" version="1.0.0.201109161533"/>
+</site>
