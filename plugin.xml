@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="org.antifun.JarDirectoryContainer"
+         name="org.antifun.JarDirectoryContainerInitializer"
+         point="org.eclipse.jdt.core.classpathContainerInitializer">
+      <category name=""/>
+      <classpathContainerInitializer
+            id="org.antifun.JarDirectoryContainer"
+            class="org.antifun.eclipsejardirectory.JarDirectoryContainerInitializer"/>
+         
+   </extension>
+
+   <extension 
+       point="org.eclipse.jdt.ui.classpathContainerPage">
+      <classpathContainerPage
+          id="org.antifun.JarDirectoryContainer"
+          name="Jar Directory"
+          class="org.antifun.eclipsejardirectory.JarDirectoryContainerPage"/>
+   </extension>
+
+</plugin>
