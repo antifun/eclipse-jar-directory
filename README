@@ -1,0 +1,15 @@
+Eclipse Jar Directory
+=====================
+
+This is a simple plugin that enables a feature which Eclipse should have had
+all along: the ability to have a directory full of .jar files used as a 
+library (in Eclipse parlance) without having to manually delete and re-create
+the library every time a .jar changes.
+
+I wrote this for myself, so it's a little sparse on testing or error checking,
+but it should work for you too.
+
+You may build this yourself if you wish. For convenience I've put a built
+version on Github, though I make no promises about when it's built or from
+what version of the code.
+
