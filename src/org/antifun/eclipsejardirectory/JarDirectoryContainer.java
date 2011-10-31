@@ -36,13 +36,14 @@ public class JarDirectoryContainer implements IClasspathContainer {
     private IJavaProject project;
 
     private Collection<IClasspathEntry> getJustJarsInDirectory(File baseDir) {
+        ArrayList<IClasspathEntry> entries = new ArrayList<IClasspathEntry>();
         Log.info("asked to get classpath entries for " + baseDir);
         File[] jars = baseDir.listFiles(JAR_FILTER);
-        if (jars == null)
-        Log.info("contains " + jars.length + " jars");
-        ArrayList<IClasspathEntry> entries = new ArrayList<IClasspathEntry>();
-        for (File jar : jars) {
-            entries.add(JavaCore.newLibraryEntry(new Path(jar.getAbsolutePath()), null, null));
+        if (jars != null) {
+            Log.info("contains " + jars.length + " jars");
+            for (File jar : jars) {
+                entries.add(JavaCore.newLibraryEntry(new Path(jar.getAbsolutePath()), null, null));
+            }
         }
         return entries;
     }
